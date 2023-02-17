@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="masodik.css">
+    <title>Második</title>
+</head>
+<body>
+    <form name="aha" method="GET">
+        <label for="text">Kérem a felhasználónevet:</label>
+        <input type="text" minlength="5" maxlength="16" id="felhasznalonev" name="nick">
+        <br>
+        <label for="text">Kérem a jelszót:</label>
+        <input type="password" minlength="5" id="jelszo1" name="pass1">
+        <br>
+        <label for="text">Jelszó mégegyszer:</label>
+        <input type="password" minlength="5" id="jelszo2" name="pass2">
+        <br>
+        <label for="text">Kérem az e-mail címét:</label>
+        <input type="email" id="email" name="mail">
+        <br>
+        <label for="text">Kérem a születési dátumát:</label>
+        <input type="date" id="datum" name="date">
+        <br>
+        <button type="submit" id="gomb" onclick="felhasznalonev(), jelszo(), email()">Küldés</button>
+    </form>
+</body>
+<script src="masodik.js"></script>
+</html>
